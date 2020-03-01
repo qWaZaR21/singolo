@@ -1,0 +1,136 @@
+body {
+    width: 1020px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio {
+    width: 100%;
+    height: 870px;
+    background-color: #2d303a;
+    border-bottom: solid 6px #323746;
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
+
+.portfolio-title {
+    font-size: 31px;
+    color: #666d89;
+    font-weight: bold;
+}
+
+.portfolio-description {
+    font-size: 18px;
+    margin-top: 21px;
+    color: #666d89;
+}
+
+.portfolio-filter {
+    margin: 15px 0 19px 0 ;
+    color: #666d89;
+    display: flex;
+    font-size: 11.5px; 
+}
+
+.portfolio-content {
+overflow: hidden;
+height: 610px;
+}
+
+.filter-name {
+    border: #666d89 1px solid;
+    padding: 3px 7px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-name:hover{
+    color: white;
+    border: white 1px solid;
+}
+
+.active {
+    color: white;
+    border: white 1px solid;
+}
+
+.content-block {
+    height: 187px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us {
+    background-color: #f2f2f2;
+    height: 734px;
+    width: 100%;
+    border-bottom: solid 6px white;
+    padding: 58px 40px;
+    box-sizing: border-box;
+}
+
+.about-us-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #666d89;
+}
+
+.about-us-text {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #767e9e;
+    text-align: justify;
+    height: 56px;
+}
+
+.about-us-person {
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-card {
+    margin-top: 48px;
+    width: 300px;
+}
+
+.person-name {
+    color: #666d89;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 11px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.person-description {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #767e9e;
+}
+
+.social {
+    margin-top: 24px;
+}
+
+.social-logo {
+    margin-right: 5px;
+}
+
+.social-logo:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.fix-1px {
+    margin-left: 1px;
+}
