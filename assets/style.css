@@ -262,8 +262,15 @@ p {
 }
 
 .portfolio-content {
-overflow: hidden;
-height: 610px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 610px;
+}
+
+.portfolio-img {
+    margin-bottom: 20px;
 }
 
 .filter-name {
@@ -396,7 +403,6 @@ height: 610px;
 
 .form {
     width: 620px;
-    display: inline;
 }
 
 .input-field {
@@ -535,3 +541,6 @@ height: 610px;
     text-decoration: none;
 }
 
+.fix-1px-contacts {
+    margin-bottom: 7px;
+}
