@@ -26,36 +26,17 @@ p {
     font-size: 11.3px;
     font-weight: bold;
     color: white;
-    /*
-    margin: 0;
-    padding: 4px;
-    font-size: 11.5px;
-    color: white;
-    */ 
 }
 
 .header-menu_list li {
     display: inline;
     margin-left: 4px;
-    /*
-    display: inline;
-    margin-left: 3px;
-    */
-}
-
-.header-menu_list li:hover {
-    cursor: pointer;
-    color: #f06c64;
 }
 
 .header-menu_list li::after {
     content: "·";
     margin: 0px 8px 0px 15px;
     color: #494e62;
-}
-
-.header-menu_list .active-menu {
-    color: #f06c64;
 }
 
 .header-menu_list li:last-child::after {
@@ -92,7 +73,7 @@ p {
 }
 
 .main-slider-block {
-    padding: 0 40px 0 40px;
+    position: relative;
     box-sizing: border-box;
     height: 600px;
     background-color: #ef6c64;
@@ -103,12 +84,15 @@ p {
 }
 
 .arrow-left {
-    margin-left: 2px;
-    margin-bottom: 5px;
+    position: absolute;
+    left: 42px;
+    margin-top: -3px;
 }
 
 .arrow-right {
-    margin-bottom: 5px;
+    position: absolute;
+    right: 40px;
+    margin-top: -3px;
 }
 
 
@@ -123,19 +107,30 @@ p {
 }
 
 
-.slider-content {
+#slider-content {
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
-
 .vertical-iphone {
-    margin-left: -1px;
+    margin-left: 111px;
     margin-bottom: 6px;
+    background-image: url(assets/back-f-black.png);
 }
 
-.horizont-iphone {
+.background-vertical-iphone { 
+    background-image: url(assets/back-f.png);
+}
+
+.horizontal-iphone {
     margin-bottom: 7px;
     margin-left: 72px;
+    background-image: url(assets/back-v-black.png);
+}
+
+.background-horizontal-iphone { 
+    background-image: url(assets/back-v.png);
 }
 
 .text-content {
@@ -213,16 +208,6 @@ p {
     text-overflow: ellipsis;
     letter-spacing: 0.4px;
     
-    /*
-    text-align: justify;
-    margin-top: 9px;
-    word-wrap: break-word;
-    word-spacing: 1px;
-    font-size: 11px;
-    line-height: 2;
-    color: #767e9e;
-    letter-spacing: 0.3px;
-    */
 }
 
 .item-img-second {
@@ -233,7 +218,7 @@ p {
 
 .portfolio {
     width: 100%;
-    height: 869px;
+    max-height: 869px;
     background-color: #2d303a;
     border-bottom: solid 6px #323746;
     padding: 60px 40px;
@@ -254,23 +239,27 @@ p {
     letter-spacing: 0.2px;
 }
 
-.portfolio-filter {
+#portfolio-filter {
     margin: 15px 0 20px 0 ;
     color: #666d89;
     display: flex;
     font-size: 11.5px; 
 }
 
-.portfolio-content {
+#portfolio-content {
+  overflow: hidden;
+  max-height: 610px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  overflow: hidden;
-  height: 610px;
 }
 
 .portfolio-img {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+    margin-right: 20px;
+}
+
+.portfolio-img:nth-child(4n){
+    margin-right: 0px;
 }
 
 .filter-name {
@@ -544,3 +533,5 @@ p {
 .fix-1px-contacts {
     margin-bottom: 7px;
 }
+
+

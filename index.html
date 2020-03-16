@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-dom.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>Singolo</title>
 </head>
@@ -13,25 +14,26 @@
             <span class="logo_star">*</span>
         </div>
         <div class="header-menu">
-            <ul class="header-menu_list">
-                <li class="active-menu">HOME</li>
-                <li>SERVICES</li>
-                <li>PORTFOLIO</li>  
-                <li>ABOUT</li> 
-                <li>CONTACT</li> 
+            <ul id="menu" class="header-menu_list">
+                <li><a  class="active-menu" href="#HOME">HOME</a></li>
+                <li><a href="#SERVICES">SERVICES</a></li>
+                <li><a href="#PORTFOLIO">PORTFOLIO</a></li>  
+                <li><a href="#ABOUT">ABOUT</a></li> 
+                <li><a href="#CONTACT">CONTACT</a></li> 
             </ul>   
         </div>
     </header>
     <div class="header-separator-line"></div>
-    <div class="main-slider-block">
-        <img class="arrow-left" src="./assets/arrow-left.png">
-        <div class="slider-content">
-            <img class="vertical-iphone" src="./assets/iphone-vertical.png">
-            <img class="horizont-iphone" src="./assets/horizont-iphon.png">
+    <div id="main-slider-block" class="main-slider-block">
+        <img id="arrow-left" class="arrow-left" src="./assets/arrow-left.png">
+        <div id="slider-content">
+            <img id="vertical-iphone" class="vertical-iphone background-vertical-iphone"  src="./assets/iphone-vertical.png">
+            <img id="horizontal-iphone" class="horizontal-iphone background-horizontal-iphone"  src="./assets/horizont-iphon.png">
         </div>
-        <img class="arrow-right" src="./assets/arrow-right.png">
+        <img id="arrow-right" class="arrow-right" src="./assets/arrow-right.png">
     </div>
     <div class="slider-separator-line"></div>
+    <p><a name="SERVICES"></a></p>
     <div class="text-content">
         <div class="services">
             <p class="services-h">Our Services</p>
@@ -109,6 +111,7 @@
         </div>
     </div>
     <div class="service-separator-line"></div>
+    <p><a name="PORTFOLIO"></a></p>
     <div class="portfolio">
         <div class="portfolio-title">
             <p>Portfolio</p>
@@ -116,35 +119,36 @@
         <div class="portfolio-description">
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         </div>
-        <div class="portfolio-filter">
+        <div id="portfolio-filter">
             <div class="filter-name active">
                 All
             </div>
-            <div class="filter-name">
+            <div data-type="Web Design" class="filter-name">
                 Web Design
             </div>
-            <div class="filter-name">
+            <div data-type="Graphic Design" class="filter-name">
                 Graphic Design
             </div>
-            <div class="filter-name">
+            <div data-type="Artwork" class="filter-name">
                 Artwork
             </div>
         </div>
-        <div class="portfolio-content">
-                <img class="portfolio-img" src="./assets/img-1.png">
-                <img class="portfolio-img" src="./assets/img-2.png">
-                <img class="portfolio-img" src="./assets/img-3.png">
-                <img class="portfolio-img" src="./assets/img-4.png">
-                <img class="portfolio-img" src="./assets/img-5.png">
-                <img class="portfolio-img" src="./assets/img-6.png">
-                <img class="portfolio-img" src="./assets/img-7.png">
-                <img class="portfolio-img" src="./assets/img-8.png">
-                <img class="portfolio-img" src="./assets/img-9.png">
-                <img class="portfolio-img" src="./assets/img-10.png">
-                <img class="portfolio-img" src="./assets/img-11.png">
-                <img class="portfolio-img" src="./assets/img-12.png">
+        <div id="portfolio-content" >
+                <img class="portfolio-img" data-type="Web Design" src="./assets/img-1.png">
+                <img class="portfolio-img" data-type="Web Design" src="./assets/img-2.png">
+                <img class="portfolio-img" data-type="Web Design" src="./assets/img-3.png">
+                <img class="portfolio-img" data-type="Graphic Design" src="./assets/img-4.png">
+                <img class="portfolio-img" data-type="Graphic Design" src="./assets/img-5.png">
+                <img class="portfolio-img" data-type="Graphic Design" src="./assets/img-6.png">
+                <img class="portfolio-img" data-type="Graphic Design" src="./assets/img-7.png">
+                <img class="portfolio-img" data-type="Graphic Design" src="./assets/img-8.png">
+                <img class="portfolio-img" data-type="Graphic Design" src="./assets/img-9.png">
+                <img class="portfolio-img" data-type="Graphic Design" src="./assets/img-10.png">
+                <img class="portfolio-img" data-type="Artwork" src="./assets/img-11.png">
+                <img class="portfolio-img" data-type="Artwork" src="./assets/img-12.png">
         </div>
     </div>
+    <p><a name="ABOUT"></a></p>
     <div class="about-us">
         <p class="about-us-title">About Us</p>
         <p class="about-us-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -184,6 +188,7 @@
             </div>
         </div>
     </div>
+    <p><a name="CONTACT"></a></p>
     <div class="quote">
         <div class="quote-title">
             <p>Get a Quote</p>
@@ -192,17 +197,26 @@
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         </div>
         <div class="contacts">
-            <form class="form">
+            <form id="form" class="form">
                 <input type="text" required id="name" class="input-field" pattern="[A-Za-z]{2,}" placeholder="Name (Required)">
                 <input type="text" required id="email" class="input-field" pattern="\S+@[a-z]+.[a-z]+" placeholder="Email (Required)">
                 <input type="text" id="subject" class="input-field" placeholder="Subject">
-                <textarea id="textarea" class="textarea-field" placeholder="Describe your project in detail..."></textarea>
-                <button class="button" type="submit">Отправить</button> 
+                <textarea id="description" class="textarea-field" placeholder="Describe your project in detail..."></textarea>
+                <button class="button" >Отправить</button> 
             </form>
+            <div id="message-block" class="message-block hidden">
+                <div id="message">
+                    <p>Письмо отправлено</p>
+                    <p id="text-subject"></p>
+                    <p id="text-description"></p>
+                    <br>
+                    <button id="close-button">OK</button>
+                </div>
+            </div>
             <div class="info">
                 <p class="contacts-title">Contact Information</p>
                 <p class="contacts-description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                <div >
+                <div>
                     <span class="contacts-data">
                         <img class="img-icon" src="./assets/icon-1.png">
                         <p>Elm St. 14/05 Lost City</p>
@@ -230,5 +244,8 @@
             <img class="fix-1px-social" src="./assets/linkedin.png">
         </div>
     </div>
+
+    
+    <script src="script.js"></script>
 </body>
 </html>
