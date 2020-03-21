@@ -8,14 +8,15 @@
     <title>Singolo</title>
 </head>
 <body>
-    <header>
+    <!-- <div class="anchors"><a name='HOME'></a></div> -->
+    <header id="header">
         <div class="logo">
             <h1 class="logo_text">SINGOLO</h1>
             <span class="logo_star">*</span>
         </div>
         <div class="header-menu">
             <ul id="menu" class="header-menu_list">
-                <li><a  class="active-menu" href="#HOME">HOME</a></li>
+                <li><a class="active-menu" href="#header-fake">HOME</a></li>
                 <li><a href="#SERVICES">SERVICES</a></li>
                 <li><a href="#PORTFOLIO">PORTFOLIO</a></li>  
                 <li><a href="#ABOUT">ABOUT</a></li> 
@@ -23,18 +24,20 @@
             </ul>   
         </div>
     </header>
-    <div class="header-separator-line"></div>
+    <div id="header-fake" class="anchors"></div>
     <div id="main-slider-block" class="main-slider-block">
-        <img id="arrow-left" class="arrow-left" src="./assets/arrow-left.png">
+        <img id="arrow-left" class="arrow-left" src="./assets/arrow-left-1.png">
         <div id="slider-content">
-            <img id="vertical-iphone" class="vertical-iphone background-vertical-iphone"  src="./assets/iphone-vertical.png">
-            <img id="horizontal-iphone" class="horizontal-iphone background-horizontal-iphone"  src="./assets/horizont-iphon.png">
+            <div class="slide">
+                <img id="vertical-iphone" class="vertical-iphone background-vertical-iphone"  src="./assets/iphone-vertical.png">
+                <img id="horizontal-iphone" class="horizontal-iphone background-horizontal-iphone"  src="./assets/horizont-iphon.png">
+            </div>
         </div>
-        <img id="arrow-right" class="arrow-right" src="./assets/arrow-right.png">
+        <img id="arrow-right" class="arrow-right" src="./assets/arrow-right-1.png">
     </div>
     <div class="slider-separator-line"></div>
-    <p><a name="SERVICES"></a></p>
-    <div class="text-content">
+    <!-- <p class="anchors"><a name="SERVICES"></a></p> -->
+    <div id="SERVICES" class="text-content anchors">
         <div class="services">
             <p class="services-h">Our Services</p>
             <p class="services-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -111,8 +114,8 @@
         </div>
     </div>
     <div class="service-separator-line"></div>
-    <p><a name="PORTFOLIO"></a></p>
-    <div class="portfolio">
+    <!-- <p class="anchors"><a name="PORTFOLIO"></a></p> -->
+    <div id="PORTFOLIO" class="portfolio anchors">
         <div class="portfolio-title">
             <p>Portfolio</p>
         </div>
@@ -148,8 +151,8 @@
                 <img class="portfolio-img" data-type="Artwork" src="./assets/img-12.png">
         </div>
     </div>
-    <p><a name="ABOUT"></a></p>
-    <div class="about-us">
+    <!-- <p class="anchors"><a name="ABOUT"></a></p> -->
+    <div id="ABOUT" class="about-us anchors">
         <p class="about-us-title">About Us</p>
         <p class="about-us-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="about-us-person">
@@ -188,8 +191,8 @@
             </div>
         </div>
     </div>
-    <p><a name="CONTACT"></a></p>
-    <div class="quote">
+    <!-- <p class="anchors"><a name="CONTACT"></a></p> -->
+    <div id="CONTACT" class="quote anchors">
         <div class="quote-title">
             <p>Get a Quote</p>
         </div>

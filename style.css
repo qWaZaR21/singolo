@@ -1,9 +1,10 @@
 
 
-body {
+body, html {
     width: 1020px;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -13,6 +14,15 @@ header {
     border-bottom: solid 6px #323746;
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
+    height: 95px;
+    opacity: 1;
+    position: fixed;
+    width: inherit;
+    z-index: 999;
+    transition: height 0.3s, padding-top 0.3s;
+   
+    
 }
 
 p {
@@ -44,7 +54,7 @@ p {
 }
 
 .logo {
-    margin: 29px 0 0 40px !important;
+    margin: 9px 0 0 40px !important;
     display: flex;
     font-size: 24px;
 }
@@ -64,7 +74,7 @@ p {
 }
 
 .header-menu {
-    margin: 39px 13px 0 0;
+    margin: 19px 13px 0 0;
 }
 
 
@@ -87,6 +97,7 @@ p {
     position: absolute;
     left: 42px;
     margin-top: -3px;
+    z-index: 50;
 }
 
 .arrow-right {
@@ -108,6 +119,8 @@ p {
 
 
 #slider-content {
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     width: 100%;
