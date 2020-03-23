@@ -1,12 +1,12 @@
 const MENU = document.getElementById('menu');
 const HEADER = document.getElementById('header');
+const FAKE_HEADER = document.getElementById('header-fake');
 
 const ARROW_LEFT = document.getElementById('arrow-left');
 const ARROW_RIGHT = document.getElementById('arrow-right');
 const FIRST_SLIDE = '<img id="vertical-iphone" class="vertical-iphone background-vertical-iphone"  src="./assets/iphone-vertical.png"><img id="horizontal-iphone" class="horizontal-iphone background-horizontal-iphone"  src="./assets/horizont-iphon.png">';
-const SECOND_SLIDE = '<img src="./assets/Slide-2.png">';
-const TR_SLIDE = '<img src="./assets/Slide-3.png">';
-const SLIDE_ARRAY = [FIRST_SLIDE, SECOND_SLIDE, TR_SLIDE];
+const SECOND_SLIDE = '<img class="full-img" src="./assets/Slide-2.png">';
+const SLIDE_ARRAY = [FIRST_SLIDE, SECOND_SLIDE];
 
 const FILTER_BUTTONS = document.getElementById('portfolio-filter');
 const PORTFOLIO_IMAGES_ARRAY = Array.from(document.getElementsByClassName('portfolio-img')).map((imgNode) => imgNode.cloneNode());
@@ -48,6 +48,13 @@ const swipeRigthCentralSlide = () => {
 const addLeftSlide = (slideNumber) => {
   const nextSlide = document.createElement('div');
   nextSlide.classList.add('slide');
+  if (slideNumber === 1) {
+    nextSlide.classList.add('second-slide');
+    FAKE_HEADER.classList.add('second-slide');
+  }
+  if (slideNumber === 0) {
+    FAKE_HEADER.classList.remove('second-slide');
+  }
   nextSlide.innerHTML = SLIDE_ARRAY[slideNumber];
   nextSlide.classList.add('left-slide');
 
@@ -75,6 +82,13 @@ const swipeLeftCentralSlide = () => {
 const addRigthSlide = (slideNumber) => {
   const nextSlide = document.createElement('div');
   nextSlide.classList.add('slide');
+  if (slideNumber === 1) {
+    nextSlide.classList.add('second-slide');
+    FAKE_HEADER.classList.add('second-slide');
+  }
+  if (slideNumber === 0) {
+    FAKE_HEADER.classList.remove('second-slide');
+  }
   nextSlide.innerHTML = SLIDE_ARRAY[slideNumber];
   nextSlide.classList.add('rigth-slide');
 
@@ -207,7 +221,7 @@ PORTFOLIO_IMAGES_CONTAINER.addEventListener('click', (event) => {
 });
 
 window.addEventListener('scroll', () => {
-  (window.scrollY > 0) ? HEADER.classList.add('not-static') : HEADER.classList.remove('not-static');
+  (window.scrollY > 95) ? HEADER.classList.add('not-static') : HEADER.classList.remove('not-static');
 });
 
 // window.addEventListener('scroll', () => {

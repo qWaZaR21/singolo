@@ -1,0 +1,32 @@
+@media (min-width: 768px) and (max-width: 1020px) {
+    
+    body {
+        width: 100%;
+        max-width: 1020px;
+    }
+    
+    #header {
+        width: 100%;
+        max-width: 1020px;
+    }
+
+    .third-slide {
+        background-color: #ff7f27;
+    }
+
+    .slide {
+        position: absolute;
+        justify-content: space-around;
+    }
+
+    .vertical-iphone {
+        width: 23%;
+        margin-left: 60px;
+    }
+
+    .horizontal-iphone {
+        width: 46%;
+        margin-right: 60px;
+    }
+
+}

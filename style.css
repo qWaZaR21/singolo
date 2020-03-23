@@ -1,13 +1,14 @@
 
 
 body, html {
-    width: 1020px;
+    max-width: 1020px;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
 }
 
 header {
+    width: 1020px;
     background-color: #2d303a;
     box-sizing: border-box;
     height: 95px;
@@ -18,7 +19,6 @@ header {
     height: 95px;
     opacity: 1;
     position: fixed;
-    width: inherit;
     z-index: 999;
     transition: height 0.3s, padding-top 0.3s;
    
@@ -87,7 +87,6 @@ p {
     box-sizing: border-box;
     height: 600px;
     background-color: #ef6c64;
-    border-bottom: 6px solid #ea666b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,20 +129,26 @@ p {
     margin-left: 111px;
     margin-bottom: 6px;
     background-image: url(assets/back-f-black.png);
+    background-size: 100%;
+
 }
 
 .background-vertical-iphone { 
     background-image: url(assets/back-f.png);
+    background-size: 100%;
 }
 
 .horizontal-iphone {
     margin-bottom: 7px;
     margin-left: 72px;
     background-image: url(assets/back-v-black.png);
+    background-size: 100%;
+
 }
 
 .background-horizontal-iphone { 
     background-image: url(assets/back-v.png);
+    background-size: 100%;
 }
 
 .text-content {
