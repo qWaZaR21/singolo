@@ -99,7 +99,7 @@ a.active-menu {
 
 .second-slide {
     background-color: #648bf0 !important;
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .left-slide {

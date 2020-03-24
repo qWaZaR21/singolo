@@ -309,7 +309,7 @@ p {
 
 .about-us {
     background-color: #f2f2f2;
-    height: 734px;
+    /* height: 734px; */
     width: 100%;
     border-bottom: solid 6px white;
     padding: 58px 40px;
@@ -341,7 +341,7 @@ p {
 
 .person-card {
     margin-top: 48px;
-    width: 300px;
+    width: 32%;
 }
 
 .person-name {
@@ -356,12 +356,17 @@ p {
 
 }
 
+.person-img {
+    width: 100%;
+}
+
 .person-description {
     margin-top: 8px;
     font-size: 12px;
     line-height: 1.8;
     color: #767e9e;
     text-align: justify;
+    height: 10%;
 }
 
 .social {
@@ -382,7 +387,7 @@ p {
 }
 
 .quote {
-    height: 654px;
+    /* height: 654px; */
     padding: 60px 40px;
     box-sizing: border-box;
     border-bottom: solid 6px #ea676b;
@@ -411,12 +416,12 @@ p {
 }
 
 .form {
-    width: 620px;
+    width: 67%;
 }
 
 .input-field {
     margin-bottom: 16px;
-    width: 619px;
+    width: 100%;
     background-color: #d6564f;
     color: #f48c8f;
     height: 38px;
@@ -436,11 +441,11 @@ p {
 }
 
 .info {
-    width: 300px;
+    width: 30%;
 }
 
 .textarea-field {
-    width: 619px;
+    width: 100%;
     background-color: #d6564f;
     color: #f48c8f;
     height: 202px;

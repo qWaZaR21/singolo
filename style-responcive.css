@@ -37,5 +37,98 @@
 
     #portfolio-content {
         grid-template-areas: "a a a";
-      } 
+    } 
+
+    .person-description {
+        height: 13%;
+    }   
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    .main-slider-block {
+        height: 65vw;
+    }
+
+    .slide {
+        justify-content: space-between;
+    }
+
+    .arrow-left {
+        left: 2%;
+    }
+
+    .arrow-right {
+        right: 2%;
+    }
+
+    .vertical-iphone {
+        width: 23%;
+        margin-left: 10%;
+    }
+
+    .horizontal-iphone {
+        width: 46%;
+        margin-right: 10%;
+        margin-left: 0px;
+    }
+
+    .services-items {
+        grid-template-areas: "a";
+    }
+
+    .item-description {
+        margin: 0 0 0 20px;
+    }
+
+    #portfolio-content {
+        grid-template-areas: "a a";
+    }
+
+    .portfolio-img:nth-child(n+9) {
+        display: none;
+    }
+
+    .about-us {
+        height: 100%;
+    }
+    
+    .about-us-text {
+        height: 100%;
+    }
+
+    .about-us-person {
+        display: inline;
+    }
+
+    .person-card {
+        margin-top: 24px;
+        width: 100%;
+    }
+        
+    .quote {
+        height: 100%;
+    }
+
+    .contacts {
+        display: block;
+        margin-top: 24px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .social-media {
+        margin: 0 auto;
+    }
 }
