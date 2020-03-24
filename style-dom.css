@@ -76,9 +76,9 @@ a.active-menu {
     transition: opacity 0.5s;
 } */
 
-.anchors {
+/* .anchors {
     width: inherit;
-}
+} */
 
 #slide-iphone {
     display: flex;

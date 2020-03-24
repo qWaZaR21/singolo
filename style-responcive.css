@@ -29,4 +29,13 @@
         margin-right: 60px;
     }
 
+    .services-items {
+        display: grid;
+        grid-template-areas: "a a";
+        grid-gap: 20px 40px;
+    }
+
+    #portfolio-content {
+        grid-template-areas: "a a a";
+      } 
 }
