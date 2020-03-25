@@ -1,6 +1,9 @@
 const MENU = document.getElementById('menu');
+const MENU_MOBILE = document.getElementById('menu-mobile');
 const HEADER = document.getElementById('header');
 const FAKE_HEADER = document.getElementById('header-fake');
+
+const BURGER_ICON = document.getElementById('menu-burger-icon');
 
 const ARROW_LEFT = document.getElementById('arrow-left');
 const ARROW_RIGHT = document.getElementById('arrow-right');
@@ -23,6 +26,11 @@ const SLIDER = document.getElementById('slider-content');
 let currentSlide = 0;
 let valeuScroll = 0;
 
+
+BURGER_ICON.addEventListener('click', () => {
+  document.getElementById('side-menu-wrapper').classList.toggle('hidden');
+  BURGER_ICON.classList.toggle('side-menu-open');
+});
 
 
 const deleteSideSlide = () => {
@@ -106,6 +114,13 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add('active-menu');
   }
 });
+
+// MENU_MOBILE.addEventListener('click', (event) => {
+//   if (event.target.nodeName === 'A') {
+//     MENU_MOBILE.querySelectorAll('li').forEach((el) => el.firstChild.classList.remove('active-menu'));
+//     event.target.classList.add('active-menu');
+//   }
+// });
 
 const addVerticalIphoneListener = () => {
   const VERTICAL_IPHONE = document.getElementById('vertical-iphone');
@@ -237,8 +252,25 @@ document.addEventListener('scroll', () => {
   const links = document.querySelectorAll('#menu a');
 
   divs.forEach((el) => {
+    if (el.offsetTop - 50 <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+      links.forEach((a) => {
+        a.classList.remove('active-menu');
+        if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add('active-menu');
+        }
+      });
+    }
+  });
+});
 
-    if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+document.addEventListener('scroll', () => {
+
+  const curPos = window.scrollY;
+  const divs = document.querySelectorAll('.anchors');
+  const links = document.querySelectorAll('#menu-mobile a');
+
+  divs.forEach((el) => {
+    if (el.offsetTop - 50 <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
       links.forEach((a) => {
         a.classList.remove('active-menu');
         if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {

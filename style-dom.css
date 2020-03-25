@@ -10,7 +10,7 @@ li:not(.active-menu) a {
     color: #f06c64;
 }
 
-.header-menu_list li a {
+a {
     color: white;
     text-decoration: unset;
 }
@@ -32,7 +32,7 @@ a.active-menu {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 #message {

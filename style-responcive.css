@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1020px) {
+@media screen and (min-width: 768px) and (max-width: 1019px) {
     
     body {
         width: 100%;
@@ -44,8 +44,113 @@
     }   
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     
+    header {
+        width: 100%;
+        align-items: center;
+        height: 55px;
+        border: 1px solid #323746;
+        padding-top: 0px;
+    }
+
+    #header-fake {
+        height: 55px;   
+    }
+
+    #menu-burger-icon {
+        position: fixed;
+        left: 20px;
+        top: 17px;
+        z-index: 150;
+        transition: all 0.5s;
+    }
+
+    /* #menu-burger-icon:hover {
+        transform: scale(1.1);
+        transition: all 0.3s;
+    } */
+
+    .header-menu-mobile {
+        position: absolute;
+        height: 300px;
+        background-color: #323746;
+    }
+
+    #side-menu-wrapper {
+        display: block;
+    }
+
+    #menu-burger-icon {
+        display: block;
+    }
+
+    .side-menu-open {
+        transform: rotate(90deg);
+        transition: all 0.5s;
+    }
+
+    .logo_text {
+        font-size: 20px !important;
+    }
+
+    .side-menu {
+        z-index: 100;
+        height: 100vh;
+        width: 80vw;
+        position: fixed;
+        box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+        background: #2D303A;
+    }
+
+    .side-menu-logo {
+        font-size: 24px;
+        display: flex;
+        margin: 17px 0 0 71px;
+    }
+
+    .side-menu ul {
+        list-style: none;
+        padding: 20vh 0 0 71px;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.035em;
+    }
+
+    .side-menu li {
+        margin-bottom: 27px;
+    }
+
+    .side-menu-wrapper {
+        /* transition: opacity 0.3s; */
+    }
+
+    .side-menu-wrapper::after{
+        content: "";
+        width: 20vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.3;
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 50;
+    }
+
+    .side-menu-hidden {
+        opacity: 0;
+        z-index: 150;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .logo {
+        margin: 0 auto !important;
+    }
+   
     .main-slider-block {
         height: 65vw;
     }
@@ -131,4 +236,9 @@
     .social-media {
         margin: 0 auto;
     }
+
+    .not-static {
+        height: 55px;
+    } 
+
 }

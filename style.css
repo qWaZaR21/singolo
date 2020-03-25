@@ -11,7 +11,6 @@ header {
     width: 1020px;
     background-color: #2d303a;
     box-sizing: border-box;
-    height: 95px;
     border-bottom: solid 6px #323746;
     display: flex;
     justify-content: space-between;
@@ -19,7 +18,7 @@ header {
     height: 95px;
     opacity: 1;
     position: fixed;
-    z-index: 999;
+    z-index: 75;
     transition: height 0.3s, padding-top 0.3s;
    
     
@@ -559,4 +558,10 @@ p {
     margin-bottom: 7px;
 }
 
+#side-menu-wrapper {
+    display: none;
+}
 
+#menu-burger-icon {
+    display: none;
+}
