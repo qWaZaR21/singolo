@@ -20,8 +20,6 @@ header {
     position: fixed;
     z-index: 75;
     transition: height 0.3s, padding-top 0.3s;
-   
-    
 }
 
 p {
@@ -270,7 +268,7 @@ p {
   width: 100%;
   display: grid;
   grid-template-areas: "a a a a";
-  grid-gap: 10px;
+  grid-gap: 20px;
 }   
 
 .portfolio-img {
@@ -467,7 +465,7 @@ p {
     background-color: #d6564f;
     color: #f48c8f;
     height: 38px;
-    width: 150px;
+    width: 100%;
     border: 0px;
     border-radius: 5px;
     border: 1px white solid;

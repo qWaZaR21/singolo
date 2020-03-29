@@ -188,6 +188,7 @@
 
     #portfolio-content {
         grid-template-areas: "a a";
+        grid-gap: 14px;
     }
 
     .portfolio-img:nth-child(n+9) {
